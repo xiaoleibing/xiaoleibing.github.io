@@ -29,14 +29,16 @@
     
     
         <div class="post-main-title">
-            First post
+            Listen, Perceive, Grasp: CLIP-driven attribute-aware network for language-conditioned visual segmentation and grasping
         </div>
         <div class="post-meta">
             2025-02-26
         </div>
         <div class="post-md">
-            <p> These capabilities work in concert to enable the robot to execute complex physical tasks.</p>
-<h1 id="Test"><a href="#Test" class="headerlink" title="Test"></a>Test</h1><h2 id=""><a href="#" class="headerlink" title=""></a></h2><p><img src="/./images/architecture.jpg" alt="图片"></p>
+            <h2 id="The-listen-perceive-grasp-paradigm-for-robotic-grasp-reasoning"><a href="#The-listen-perceive-grasp-paradigm-for-robotic-grasp-reasoning" class="headerlink" title="The listen-perceive-grasp paradigm for robotic grasp reasoning"></a>The <em>listen-perceive-grasp</em> paradigm for robotic grasp reasoning</h2><p>The listen-perceive-grasp paradigm for robotic grasp reasoning. Given a natural language description of a desired object in the scene, a human is able to adeptly listen for the gist of the description and understand linguistic and visual concepts, then perceive and delimit the referred object, and ultimately grasp the target by factoring in the physical attribute such as shape, scale, and spatial location. This process is similarly applicable to robots. The visual attributes serve to constrain the both width and position of the grasping rectangle, thereby preventing collisions with other objects in the clutter.<br><img src="/./images/Schematic.jpg" alt="listen-perceive-grasp paradigm"></p>
+<h2 id="Overview-of-CTNet"><a href="#Overview-of-CTNet" class="headerlink" title="Overview of CTNet"></a>Overview of CTNet</h2><p>An overview of CTNet architecture. Given an image-query pair, we first employ listen module to understand and align visual and linguistic concepts. Then, the perceive module recursively extracts object-orientied features with visual attributes and generates the target mask corresponding to the description. Last,  The grasp module aggregates the attribute-based and semantic-rich features to refine the grasp pose of the desired object.<br><img src="/./images/architecture.jpg" alt="listen-perceive-grasp paradigm"></p>
+<h2 id="Dataset-examples"><a href="#Dataset-examples" class="headerlink" title="Dataset examples"></a>Dataset examples</h2><p>In order to train the proposed method to perceive and grasp the specific target corresponding to the language, we introduce a RefOCIDGrasp dataset based on <a target="_blank" rel="noopener" href="https://www.acin.tuwien.ac.at/en/vision-for-robotics/software-tools/object-clutter-indoor-dataset/">OCID</a>, <a target="_blank" rel="noopener" href="https://github.com/stefan-ainetter/grasp_det_seg_cnn">OCID-grasp</a>, and <a target="_blank" rel="noopener" href="https://github.com/lluma/OCID-Ref">OCID-Ref</a>  datasets.<br><img src="/./images/examples.jpg" alt="Dataset Examples"></p>
+<h2 id="Qualitative-results"><a href="#Qualitative-results" class="headerlink" title="Qualitative results"></a>Qualitative results</h2><p>Qualitative results of our proposed method for different objects under different or same scenes.<br><img src="/./images/visualization.jpg" alt="Visualization"></p>
 
         </div>
 
